@@ -6,10 +6,19 @@
 // linearSearchIncludes(foods, "pizza") --> true
 // linearSearchFind(foods, food => food === "pizza") --> "pizza"
 
-function linearSearchIndexOf(arr, val) {}
+function linearSearchIndexOf(arr, val) {
+  for (let index = 0; index < arr.length; index++) {
+    if(arr[index]===val){
+      return index
+    }
+      
+    
+  }
+  return -1;
+}
 
-
-function linearSearchFind(arr, cb) {}
+console.log(linearSearchIndexOf(["pizza", "orange", "yogurt"], 'yogurt'));
+// function linearSearchFind(arr, cb) {}
 
 
 
